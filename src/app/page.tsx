@@ -1,3 +1,3 @@
-export default function Home() {
-  return <h1 className="text-accent-orchid">hii</h1>;
-}
+import Home from "@/modules/home/components/Home";
+
+export default Home;
