@@ -1,0 +1,81 @@
+body {
+  @apply bg-background text-primary overflow-x-hidden font-Inter caret-accent;
+}
+
+.heading_h1 {
+  @apply text-[2.5rem] leading-[3rem] font-bold sm:leading-[4rem];
+}
+
+.description_text {
+  @apply text-lg tracking-[0.013rem] text-muted-kettleMan;
+}
+
+.form_error {
+  @apply text-xs tracking-wider text-red-500;
+}
+
+.stroke-grey > path {
+  @apply stroke-muted;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide_scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Overlay  */
+.overlay {
+  @apply overflow-x-hidden bg-primary-foreground fixed top-0 right-0 z-20 w-0 h-full;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.overlay-content {
+  @apply relative top-[25%] w-full text-center;
+}
+
+.overlay {
+  @apply !overflow-hidden;
+}
+
+.overlay:before {
+  content: "";
+  @apply top-0 left-0 right-0 bottom-0 fixed w-full h-full z-20 bg-primary/50;
+}
+
+.overlayHidden:before {
+  @apply bg-transparent;
+}
+
+/* Title  */
+
+.title-medium {
+  @apply font-bold leading-[1.8rem] text-primary;
+}
+
+::-webkit-scrollbar {
+  @apply w-[0.313rem];
+}
+
+::-webkit-scrollbar-track-piece {
+  @apply bg-primary-lightGray rounded-xl;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
+::-webkit-scrollbar:horizontal {
+  @apply h-[0.313rem];
+}
+
+.word_break {
+  word-break: break-word;
+}
+

@@ -1,21 +1,83 @@
+@import "../assets/fonts/fonts.css";
+@import "../assets/css/common.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .loader {
+    --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+    animation: l3 1s infinite linear;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  :root {
+    --background: 255 255 255 /* #ffffff */;
+    --primary: 0 0 0 /* #000000 */;
+    --primary-foreground: 255 255 255 /* #ffffff */;
+    --primary-light-gray: 250 250 250 /* #fafafa */;
+    --accent: 68 169 68 /* #44A944 */;
+    --accent-foreground: 232 245 233 /* #e8f5e9 */;
+    --accent-secondary: 67 160 71 /* #43a047 */;
+    --accent-orchid: 190 85 216 /* #BE55D8 */;
+    --accent-akebiPurple: 157 65 181 /* #9D41B5 */;
+    --accent-sassyPink: 246 209 255 /* #F6D1FF */;
+    --accent-fragrantJasmine: 251 248 229 /* #FBF8E5 */;
+    --accent-welcomingWasp: 235 168 0 /* #EBA800 */;
+    --accent-sky: 0 149 233 /* #0095E9  */;
+    --accent-wasp: 235 168 0 /*EBA800 */;
+    --accent-pinkFlamingo: 255 68 255 /* #FF6AFF */;
+    --accent-flamBoyant: 252 56 56 /* #FC3838 */;
+    --accent-irrigoPurple: 151 71 255 /* #9747FF */;
+    --muted: 123 123 123 /* #7b7b7b */;
+    --muted-foreground: 235 235 235 /* #ebebeb */;
+    --muted-secondary: 158 158 158 /* #9E9E9E */;
+    --muted-dark: 125, 125, 125 /* #7D7D7D */;
+    --muted-flyByNight: 72 92 103 /* #485C67 */;
+    --muted-marina: 221 221 221 /* #DDDDDD */;
+    --muted-goshawkGrey: 68 68 68 /* #444444 */;
+    --dark-green: 46 125 50 /* #2e7d32 */;
+    --light-green: 232 245 233 /* #E8F5E9 */;
+    --kettleMan: 97 97 97 /* #616161 */;
+    --lightGray: 250 250 250 /* #fafafa */;
+    --superSilver: 238 238 238 /* #eeeeee */;
+    --lynxWhite: 247 247 247 /* #F7F7F7 */;
+    --coldMorning: 229 229 229 /* #E5E5E5 */;
+    --destructive: 252 56 56 /* FC3838 */;
+    --success: 73 179 56 /* #49B338 */;
+    --danger: 255 92 92 /* #FF5C5C */;
+    --radius: 0.5rem; /* 8px */
+    --lightBlue: 41 174 250 /* #29AEFA1A */;
+    --linoleumBlue: 66 125 157 /* #427D9D */;
+  }
+}
+
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@layer components {
+  .tail::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -3px;
+    width: 15px;
+    height: 15px;
+    clip-path: path(
+      "M10.2903 13.0649C10.2903 13.0649 8.45201 11.4016 7.27411 10.3358C6.09622 9.27 4.25792 7.60665 4.25792 7.60665C3.76477 7.16044 3.69438 6.41962 4.07588 5.89098C4.09999 5.85757 4.1259 5.82502 4.15362 5.79344C4.5144 5.38243 5.0946 5.2426 5.603 5.44412C5.603 5.44412 7.90766 6.35768 9.38439 6.94304C10.8611 7.52841 13.1658 8.44197 13.1658 8.44197C14.7624 9.07487 15.4025 10.9945 14.5051 12.459C13.5999 13.9363 11.575 14.2274 10.2903 13.0649Z M4.25792 7.60665C3.76477 7.16044 3.69438 6.41962 4.07588 5.89098L0.9 11.0024C0.9 11.0024 4.5 8.50238 7.27411 10.3358C6.09622 9.27 4.25792 7.60665 4.25792 7.60665Z M4.15362 5.79344C4.5144 5.38243 5.0946 5.2426 5.603 5.44412C5.603 5.44412 7.90766 6.35768 9.38439 6.94304C7 5.50238 8.401 0.502408 8.401 0.502408L4.15362 5.79344Z"
+    );
+  }
+}
+
+.invite-dropdown .react_select__menu {
+  width: calc(100% - 40px) !important;
 }
