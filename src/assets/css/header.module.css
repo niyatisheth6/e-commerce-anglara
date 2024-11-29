@@ -1,0 +1,50 @@
+.header {
+  @apply sticky top-0 left-0 right-0 w-full bg-background z-20;
+}
+.navMenu {
+  @apply flex justify-between items-center py-5 relative;
+}
+.sidebar > ul {
+  @apply flex gap-10 maxLg:gap-5 maxLg:flex-col  relative;
+}
+.sidebar > ul > li > a {
+  transition: all 0.3s ease-in;
+  @apply flex items-center gap-x-2 text-foreground relative;
+}
+@screen maxLg {
+  .sidebar > ul > li > a {
+    background: linear-gradient(270deg, #33b2fa 2.06%, #1ee9b6 101.63%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@screen lg {
+  .sidebar > ul > li:hover > a {
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(270deg, #33b2fa 2.06%, #1ee9b6 101.63%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@screen maxLg {
+  .sidebar {
+    @apply fixed p-4 w-full left-0 bg-fuchsia-100 overflow-y-auto hidden top-[4.5rem] h-[calc(100%-4.5rem)];
+  }
+}
+@screen minMaxMd {
+  .sidebar {
+    max-width: 26.25rem;
+  }
+}
+
+.badge {
+  @apply px-3 text-sm rounded-xl bg-red-200 py-[0.125rem] text-white font-bold;
+}
+
+.dropdownEnterprise {
+  @apply p-8 bg-pink-500 flex-col maxLg:!hidden;
+}
