@@ -1,5 +1,5 @@
 body {
-  @apply bg-background text-primary overflow-x-hidden font-Inter caret-accent ;
+  @apply bg-background text-primary overflow-x-hidden font-Inter caret-accent;
 }
 
 .form_error {
@@ -35,4 +35,18 @@ body {
 
 .container {
   @apply max-w-[91.875rem] mx-auto px-[0.9375rem];
+}
+
+@screen maxLg {
+  .overlay {
+    transition: all 0.3s ease-in-out;
+    @apply w-full fixed h-full;
+  }
+  .overlay::before {
+    content: "";
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    @apply absolute top-0 left-0 right-0 bottom-0;
+  }
 }

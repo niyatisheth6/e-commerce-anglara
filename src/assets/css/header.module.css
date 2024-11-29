@@ -48,3 +48,5 @@
 .dropdownEnterprise {
   @apply p-8 bg-pink-500 flex-col maxLg:!hidden;
 }
+
+

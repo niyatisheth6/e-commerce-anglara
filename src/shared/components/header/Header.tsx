@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Logo from "@/assets/icons/Logo.svg";
-import { Delete, Menu } from "lucide-react";
+import { Delete, Menu, X } from "lucide-react";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import { useWindowSize } from "usehooks-ts";
@@ -55,18 +55,16 @@ function Header() {
           </motion.div>
 
           <button
-            className="lg:hidden w-10 h-10 grid place-items-center bg-red-400 rounded-md"
+            className="lg:hidden w-10 h-10 grid place-items-center bg-gray-400 rounded-md"
             onClick={() => setOpen(!open)}
           >
             {open ? (
               <>
-                <Delete size={24} className="text-red-500" />{" "}
-                <span>delete</span>
+                <X size={24} className="text-red-500" />{" "}
               </>
             ) : (
               <>
                 <Menu size={24} className="text-red-500" />
-                <span>delete</span>
               </>
             )}
           </button>
