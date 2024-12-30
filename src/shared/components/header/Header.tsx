@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Logo from "@/assets/icons/Logo.svg";
-import { Delete, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import { useWindowSize } from "usehooks-ts";
@@ -29,7 +29,7 @@ function Header() {
   }, [open]);
 
   return (
-    <header className={clsx(style.header)}>
+    <header className={clsx(style.header, "container")}>
       <div className="common_container">
         <div className={style.navMenu}>
           <Link href="/">

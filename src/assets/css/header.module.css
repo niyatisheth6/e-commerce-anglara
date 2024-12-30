@@ -1,5 +1,5 @@
 .header {
-  @apply sticky top-0 left-0 right-0 w-full bg-background z-20;
+  @apply sticky top-0 left-0 right-0 w-full bg-white z-20;
 }
 .navMenu {
   @apply flex justify-between items-center py-5 relative;
@@ -9,7 +9,7 @@
 }
 .sidebar > ul > li > a {
   transition: all 0.3s ease-in;
-  @apply flex items-center gap-x-2 text-foreground relative;
+  @apply flex items-center gap-x-2 text-gunmetal relative;
 }
 @screen maxLg {
   .sidebar > ul > li > a {
@@ -48,5 +48,3 @@
 .dropdownEnterprise {
   @apply p-8 bg-pink-500 flex-col maxLg:!hidden;
 }
-
-
