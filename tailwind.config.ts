@@ -6,6 +6,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
+        xs: "481px",
         sm: "640px",
         md: "768px",
         lg: "1024px",
@@ -20,46 +21,22 @@ const config: Config = {
         minMaxMd: { min: "1025px", max: "1089px" },
       },
       colors: {
-        // background: "rgb(var(--background) / <alpha-value>)",
-        // foreground: "rgb(var(--foreground) / <alpha-value>)",
-        // primary: {
-        //   DEFAULT: "rgb(var(--primary) / <alpha-value>)",
-        //   foreground: "rgb(var(--foreground) / <alpha-value>)",
-        //   lightGray: "rgb(var(--lightGray) / <alpha-value>)",
-        // },
-        // secondary: {
-        //   DEFAULT: "rgb(var(--secondary) / <alpha-value>)",
-        // },
-        // destructive: {
-        //   DEFAULT: "rgb(var(--destructive) / <alpha-value>)",
-        // },
-        // muted: {
-        //   DEFAULT: "rgb(var(--muted) / <alpha-value>)",
-        //   foreground: "rgb(var(--foreground) / <alpha-value>)",
-        //   background: "rgb(var(--background) / <alpha-value>)",
-        // },
-        // accent: {
-        //   DEFAULT: "rgb(var(--accent) / <alpha-value>)",
-        //   foreground: "rgb(var(--foreground) / <alpha-value>)",
-        //   background: "rgb(var(--background) / <alpha-value>)",
-        // },
-        // success: {
-        //   DEFAULT: "rgb(var(--success) / <alpha-value>)",
-        // },
-        // danger: {
-        //   DEFAULT: "rgb(var(--danger) / <alpha-value>)",
-        // },
 
-        gunmetal: "#1E293B",
-        mediumTurquoise: "#14B8A6",
-        cultured: "#fafafa",
-        slateGray: "#64748B",
-        honeydew: "#F0FDFA",
-        gainsboro: "#E2E8F0",
-        aliceBlue: "#F8FAFC",
-        ashGray: "#BEBCBD",
-        cadetGray: "#94A3B8",
-        crimson: "#EF4444",
+        background: "rgb(var(--background) / <alpha-value>)",
+        foreground: "rgb(var(--foreground) / <alpha-value>)",
+        primary: "rgb(var(--primary) / <alpha-value>)",
+        "primary-foreground": "rgb(var(--primary-foreground) / <alpha-value>)",
+        "primary-lightGray": "rgb(var(--primary-lightGray) / <alpha-value>)",
+        secondary: "rgb(var(--secondary) / <alpha-value>)",
+        destructive: "rgb(var(--destructive) / <alpha-value>)",
+        muted: "rgb(var(--muted) / <alpha-value>)",
+        "muted-foreground": "rgb(var(--muted-foreground) / <alpha-value>)",
+        "muted-background": "rgb(var(--muted-background) / <alpha-value>)",
+        accent: "rgb(var(--accent) / <alpha-value>)",
+        "accent-foreground": "rgb(var(--accent-foreground) / <alpha-value>)",
+        "accent-background": "rgb(var(--accent-background) / <alpha-value>)",
+        success: "rgb(var(--success) / <alpha-value>)",
+        danger: "rgb(var(--danger) / <alpha-value>)",
 
       },
 

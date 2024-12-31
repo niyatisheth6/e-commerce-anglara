@@ -1,5 +1,5 @@
 body {
-  @apply bg-white text-mediumTurquoise overflow-x-hidden font-Inter;
+  @apply bg-white overflow-x-hidden font-Inter;
 }
 
 .form_error {
@@ -22,7 +22,7 @@ body {
 }
 
 ::-webkit-scrollbar-track-piece {
-  @apply bg-cultured rounded-xl;
+  @apply bg-primary-lightGray rounded-xl;
 }
 
 ::-webkit-scrollbar-thumb {

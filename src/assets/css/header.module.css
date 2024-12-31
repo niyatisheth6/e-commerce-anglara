@@ -9,7 +9,7 @@
 }
 .sidebar > ul > li > a {
   transition: all 0.3s ease-in;
-  @apply flex items-center gap-x-2 text-gunmetal relative;
+  @apply flex items-center gap-x-2 text-foreground relative;
 }
 @screen maxLg {
   .sidebar > ul > li > a {
@@ -32,7 +32,7 @@
 
 @screen maxLg {
   .sidebar {
-    @apply fixed p-4 w-full left-0 bg-fuchsia-100 overflow-y-auto hidden top-[4.5rem] h-[calc(100%-4.5rem)];
+    @apply fixed p-4 w-full left-0 bg-white overflow-y-auto hidden top-[4.5rem] h-[calc(100%-4.5rem)];
   }
 }
 @screen minMaxMd {
@@ -41,10 +41,10 @@
   }
 }
 
-.badge {
+/* .badge {
   @apply px-3 text-sm rounded-xl bg-red-200 py-[0.125rem] text-white font-bold;
 }
 
 .dropdownEnterprise {
   @apply p-8 bg-pink-500 flex-col maxLg:!hidden;
-}
+} */

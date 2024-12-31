@@ -4,3 +4,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground: 30 41 59 /* #1E293B */;
+    --background: 255 255 255 /* #ffffff */;
+    --primary: 20 184 166 /* #14B8A6 */;
+    --primary-foreground: 255 255 255 /* #ffffff */;
+    --primary-lightGray: 250 250 250 /* #fafafa */;
+    --secondary: 100 116 139 /* #64748B */;
+    --accent: 241 245 249 /* #F1F5F9 */;
+    --accent-foreground: 240 253 250 /* #F0FDFA */;
+    --accent-background: 226 232 240 /* #E2E8F0 */;
+    --muted: 248 250 252 /* #F8FAFC */;
+    --muted-foreground: 190 188 189 /* #BEBCBD */;
+    --muted-background: 148 163 184 /* #94A3B8 */;
+    --danger: 239 68 68 /* #EF4444 */;
+    --success: 34 197 94 /* #22C55E */; /* (if needed for consistency) */
+    --destructive: 220 38 38 /* #DC2626 */; /* (if needed for consistency) */
+  }
+}
