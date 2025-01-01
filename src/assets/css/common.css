@@ -50,3 +50,7 @@ body {
     @apply absolute top-0 left-0 right-0 bottom-0;
   }
 }
+
+.review-card .slick-track {
+  @apply flex gap-5;
+}

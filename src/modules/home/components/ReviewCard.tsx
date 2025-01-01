@@ -6,7 +6,7 @@ import Avatar from "@/assets/icons/avatar.svg";
 function ReviewCard() {
   return (
     <div className="border-[0.1125rem] border-accent-background p-[1.4494rem] rounded-[0.625rem] flex flex-col gap-5">
-      <div className="flex max-w-[25rem] w-full">
+      <div className="flex max-w-[25rem] w-full justify-between">
         <Avatar />
         {/* <Image src={} alt="img"/> */}
         <div className="flex">
