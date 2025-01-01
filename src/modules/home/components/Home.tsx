@@ -7,8 +7,10 @@ import React from "react";
 // import Benefit from "./Benefit";
 // import Offer from "./Offer";
 // import PopularProducts from "./PopularProducts";
-// import FAQ from "./FAQ";
+import FAQ from "./FAQ";
 import CustomersReview from "./CustomersReview";
+import Brands from "./Brands";
+import PopularProducts from "./PopularProducts";
 // import ArrowRight from "@/assets/icons/arrow-right.svg";
 // import ArrowLeft from "@/assets/icons/arrow-left.svg?url";
 // import Image from "next/image";
@@ -24,10 +26,13 @@ function Home() {
       <FeatureProducts />
       <Benefit />
       <Offer />
-      <PopularProducts />
+    
+   
+     
+      */}
+        <PopularProducts />
       <Brands />
       <FAQ />
-      */}
       <CustomersReview />
     </div>
   );

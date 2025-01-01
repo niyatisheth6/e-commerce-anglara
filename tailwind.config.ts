@@ -28,6 +28,7 @@ const config: Config = {
         "primary-foreground": "rgb(var(--primary-foreground) / <alpha-value>)",
         "primary-lightGray": "rgb(var(--primary-lightGray) / <alpha-value>)",
         secondary: "rgb(var(--secondary) / <alpha-value>)",
+        "secondary-foreground": "rgb(var(--secondary-foreground) / <alpha-value>)",
         destructive: "rgb(var(--destructive) / <alpha-value>)",
         muted: "rgb(var(--muted) / <alpha-value>)",
         "muted-foreground": "rgb(var(--muted-foreground) / <alpha-value>)",
@@ -39,6 +40,9 @@ const config: Config = {
         danger: "rgb(var(--danger) / <alpha-value>)",
 
       },
+      boxShadow: {
+        lg: "0px 1px 2px 0px #0000000D"
+      }
 
 
     },

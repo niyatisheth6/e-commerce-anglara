@@ -16,6 +16,7 @@
     "next": "15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-fast-marquee": "^1.6.5",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "usehooks-ts": "^3.1.0"

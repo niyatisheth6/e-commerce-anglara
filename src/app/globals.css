@@ -13,6 +13,7 @@
     --primary-foreground: 255 255 255 /* #ffffff */;
     --primary-lightGray: 250 250 250 /* #fafafa */;
     --secondary: 100 116 139 /* #64748B */;
+    --secondary-foreground: 234 179 8 /* #EAB308 */;
     --accent: 241 245 249 /* #F1F5F9 */;
     --accent-foreground: 240 253 250 /* #F0FDFA */;
     --accent-background: 226 232 240 /* #E2E8F0 */;
