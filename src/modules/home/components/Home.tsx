@@ -15,6 +15,7 @@ import Offer from "./Offer";
 import Benefit from "./Benefit";
 import FeatureProducts from "./FeatureProducts";
 import Rates from "./Rates";
+import Categories from "./Categories";
 // import ArrowRight from "@/assets/icons/arrow-right.svg";
 // import ArrowLeft from "@/assets/icons/arrow-left.svg?url";
 // import Image from "next/image";
@@ -33,7 +34,7 @@ function Home() {
      
       */}
       <Rates />
-      {/* <Categories /> */}
+      <Categories />
       <FeatureProducts />
       <Benefit />
       <Offer />
