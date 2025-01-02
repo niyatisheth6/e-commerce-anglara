@@ -5,16 +5,18 @@ import ProductCard from "./ProductCard";
 
 function PopularProducts() {
   return (
-    <div className="container py-20">
-      <div className="flex justify-between flex-wrap gap-5">
-        <HeaderTitle title="Most Popular Products" />
-        <Button variant="primary">View All</Button>
-      </div>
-      <div className="mt-10 grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+    <div className="bg-muted">
+      <div className="container py-20">
+        <div className="flex justify-between flex-wrap gap-5">
+          <HeaderTitle title="Most Popular Products" />
+          <Button variant="primary">View All</Button>
+        </div>
+        <div className="mt-10 grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
       </div>
     </div>
   );

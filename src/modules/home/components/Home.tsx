@@ -7,10 +7,14 @@ import React from "react";
 // import Benefit from "./Benefit";
 // import Offer from "./Offer";
 // import PopularProducts from "./PopularProducts";
-import FAQ from "./FAQ";
-import CustomersReview from "./CustomersReview";
-import Brands from "./Brands";
-import PopularProducts from "./PopularProducts";
+// import FAQ from "./FAQ";
+// import CustomersReview from "./CustomersReview";
+// import Brands from "./Brands";
+// import PopularProducts from "./PopularProducts";
+import Offer from "./Offer";
+import Benefit from "./Benefit";
+import FeatureProducts from "./FeatureProducts";
+import Rates from "./Rates";
 // import ArrowRight from "@/assets/icons/arrow-right.svg";
 // import ArrowLeft from "@/assets/icons/arrow-left.svg?url";
 // import Image from "next/image";
@@ -24,16 +28,19 @@ function Home() {
       <Rates />
       <Categories />
       <FeatureProducts />
-      <Benefit />
-      <Offer />
-    
+ 
    
      
       */}
-        <PopularProducts />
+      <Rates />
+      {/* <Categories /> */}
+      <FeatureProducts />
+      <Benefit />
+      <Offer />
+      {/* <PopularProducts />
       <Brands />
       <FAQ />
-      <CustomersReview />
+      <CustomersReview /> */}
     </div>
   );
 }
