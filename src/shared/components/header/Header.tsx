@@ -1,22 +1,17 @@
 "use client";
 import React, { useState } from "react";
 import Logo from "@/assets/icons/Logo.svg";
-import { Menu, X } from "lucide-react";
+import { CircleUser, Menu, Search, ShoppingCart, X } from "lucide-react";
 import clsx from "clsx";
-import { useRouter } from "next/navigation";
 import { useWindowSize } from "usehooks-ts";
 import style from "@/assets/css/header.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { headerItems } from "@/shared/helpers/data/headerData";
-// import useOverlayHook from "@/shared/hooks/useOverlayHook";
 
 function Header() {
   const [open, setOpen] = useState<boolean>(false);
   const { width } = useWindowSize();
-  const router = useRouter();
-  // useOverlayHook(open);
-  console.log(router);
 
   const variants = width <= 1023 && { open: { x: 0 }, closed: { x: "-100%" } };
 
@@ -43,6 +38,27 @@ function Header() {
                   </li>
                 );
               })}
+              <li className="bg-accent hover:bg-primary group p-[0.6875rem] rounded w-fit">
+                <Search
+                  size={16}
+                  className="text-secondary group-hover:text-white"
+                />
+              </li>
+              <li className="bg-accent hover:bg-primary group p-[0.6875rem] rounded w-fit">
+                <CircleUser
+                  size={16}
+                  className="text-secondary group-hover:text-white"
+                />
+              </li>
+              <li className="bg-accent hover:bg-primary group p-[0.6875rem] rounded relative w-fit">
+                <ShoppingCart
+                  size={16}
+                  className="text-secondary group-hover:text-white"
+                />
+                <span className="bg-danger text-[0.625rem] leading-4 font-medium absolute -top-[0.3125rem] -right-[0.4375rem] px-[0.3438rem] py-[0.0625rem] rounded-full">
+                  2
+                </span>
+              </li>
             </ul>
           </motion.div>
 

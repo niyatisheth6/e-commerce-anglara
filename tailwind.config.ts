@@ -38,10 +38,12 @@ const config: Config = {
         "accent-background": "rgb(var(--accent-background) / <alpha-value>)",
         success: "rgb(var(--success) / <alpha-value>)",
         danger: "rgb(var(--danger) / <alpha-value>)",
-
+        "frost-grey": "rgb(var(--frost-grey) / <alpha-value>)",
+        "rainmaker": "rgb(var(--rainmaker) / <alpha-value>)",
       },
       boxShadow: {
-        lg: "0px 1px 2px 0px #0000000D"
+        lg: "0px 1px 2px 0px #0000000D",
+        md: "0px 4px 4px 0px #00000040"
       }
 
 
