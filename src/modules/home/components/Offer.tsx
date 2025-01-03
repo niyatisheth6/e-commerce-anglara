@@ -1,18 +1,16 @@
 "use client";
-// import Image from "next/image";
-// import Background from "@/assets/images/background.svg";
-// import Girls from "@/assets/images/girls.svg";
-// import Star from "@/assets/icons/offer.svg";
-import style from "@/assets/css/offer.module.css";
-// import Image from "next/image";
+import Image from "next/image";
+
 import Button from "@/shared/components/button/Button";
+import Girls from "@/assets/images/girlwithstar.png";
+import style from "@/assets/css/offer.module.css";
 
 function Offer() {
   return (
     <div className="bg-accent-foreground">
       <div className="container py-20">
         <div className={style.offerData}>
-          <div className="flex flex-col  gap-10 pt-[4.875rem] pl-20 pb-[7.375rem] max-w-[32.8125rem]">
+          <div className="flex flex-col gap-10 py-[4.875rem] xl:pr-0 xl:pl-20  xl:max-w-[32.8125rem] p-7">
             <h2 className="text-white font-bold text-[4rem] leading-[4.8406rem]">
               Lorem ipsum dolor sit.
             </h2>
@@ -27,12 +25,13 @@ function Offer() {
               Buy Now
             </Button>
           </div>
-          <div className="flex">
-            {/* <Girls />
-            <Star /> */}
-            {/* <Image src={Girls} alt="girl" className="self-end" />
-            <Image src={Star} alt="Star" className="self-baseline" /> */}
-          </div>
+          <Image
+            src={Girls}
+            alt="Star"
+            className=" px-[3.25rem] mx-auto"
+            width={640}
+            height={552}
+          />
         </div>
       </div>
     </div>
