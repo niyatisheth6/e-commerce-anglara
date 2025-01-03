@@ -63,6 +63,9 @@ body {
 .btn-primary {
   @apply text-white hover:text-primary bg-primary px-[4.375rem] py-3.5 text-[0.9375rem] leading-[1.1344rem] tracking-[0.5%] font-semibold rounded-lg border border-transparent hover:border-primary hover:bg-white;
 }
+.btn-secondary {
+  @apply text-primary hover:text-primary bg-white px-[4.375rem] py-3.5 text-[0.9375rem] leading-[1.1344rem] tracking-[0.5%] font-semibold rounded-lg border border-transparent hover:border-primary hover:bg-white;
+}
 .table thead {
   @apply bg-accent-foreground;
 }

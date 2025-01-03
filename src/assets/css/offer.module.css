@@ -1,0 +1,4 @@
+.offerData {
+  @apply rounded-[1.25rem] flex flex-col md:flex-row;
+  background: url("../images/background.png") no-repeat center/cover;
+}

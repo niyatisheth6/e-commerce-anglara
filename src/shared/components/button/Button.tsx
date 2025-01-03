@@ -7,7 +7,6 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?:
     | "primary"
     | "plain"
-    | "primary"
     | "secondary"
     | "danger"
     | "contained"
