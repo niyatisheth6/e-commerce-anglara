@@ -1,43 +1,18 @@
 "use client";
-import React from "react";
-import Truck from "@/assets/icons/truck.svg";
-import Headphones from "@/assets/icons/headphones.svg";
-import Rupee from "@/assets/icons/indian-rupee.svg";
-import Credit from "@/assets/icons/credit-card.svg";
+
 import clsx from "clsx";
 
-const features = [
-  {
-    icon: <Truck />,
-    title: "Free Shipping",
-    description: "Above all orders over 200rs",
-  },
-  {
-    icon: <Rupee />,
-    title: "Money Guarantee",
-    description: "45 Days to Exchange",
-  },
-  {
-    icon: <Headphones />,
-    title: "Online Support",
-    description: "24/7 Customer Care",
-  },
-  {
-    icon: <Credit />,
-    title: "Flexible Payment",
-    description: "Pay with multiple Credit Card",
-  },
-];
+import { featureData } from "@/shared/helpers/data/featureData";
 
 function Benefit() {
   return (
     <div className="container py-[3.75rem]">
       <div className="grid grid-cols-1 maxLg:gap-6 sm:grid-cols-2  xl:grid-cols-4">
-        {features.map((feature, index) => (
+        {featureData.map((feature, index) => (
           <div
             className={clsx("px-3.5 py-4 flex gap-4", {
               "xl:border-r xl:border-accent-background":
-                index !== features.length - 1,
+                index !== featureData.length - 1,
             })}
             key={index}
           >

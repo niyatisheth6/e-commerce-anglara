@@ -1,8 +1,10 @@
 import Image from "next/image";
-import productImg from "@/assets/images/product-1.png";
-import Button from "@/shared/components/button/Button";
-import StarSelected from "@/assets/icons/star-selected.svg";
 import { Heart } from "lucide-react";
+
+import Button from "@/shared/components/button/Button";
+
+import productImg from "@/assets/images/product-1.png";
+import StarSelected from "@/assets/icons/star-selected.svg";
 
 function ProductCard() {
   return (

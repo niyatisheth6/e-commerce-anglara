@@ -3,13 +3,8 @@ import { memo } from "react";
 import clsx from "clsx";
 import { Minus, Plus } from "lucide-react";
 
+import { FaqData } from "@/shared/types";
 import { faqData } from "@/shared/helpers/data/faqData";
-
-type FaqData = {
-  id: number;
-  question: string;
-  answer: string;
-};
 
 type FAQDataProps = {
   item: FaqData;

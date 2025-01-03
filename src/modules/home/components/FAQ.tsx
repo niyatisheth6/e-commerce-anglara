@@ -1,9 +1,10 @@
 "use client";
+import { useCallback, useState } from "react";
+
+import { faqData } from "@/shared/helpers/data/faqData";
 import HeaderTitle from "@/shared/components/header-title/HeaderTitle";
 
-import { useCallback, useState } from "react";
 import FAQData from "./FAQData";
-import { faqData } from "@/shared/helpers/data/faqData";
 
 function FAQ() {
   const [openItems, setOpenItems] = useState<number[]>([1]);

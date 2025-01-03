@@ -1,4 +1,3 @@
-import React from "react";
 import Star from "@/assets/icons/star_outline.svg";
 import StarSelected from "@/assets/icons/star-selected.svg";
 import Avatar from "@/assets/icons/avatar.svg";

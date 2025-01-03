@@ -1,10 +1,11 @@
 "use client";
 
-import HeaderTitle from "@/shared/components/header-title/HeaderTitle";
-import React from "react";
-import ReviewCard from "./ReviewCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import HeaderTitle from "@/shared/components/header-title/HeaderTitle";
+
+import ReviewCard from "./ReviewCard";
 import ReviewCardWrapper from "./ReviewCardWrapper";
 
 function CustomersReview() {

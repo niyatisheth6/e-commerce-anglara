@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
+
 import Provider from "@/shared/tanstack-query/Provider";
 import Header from "@/shared/components/header/Header";
-// import Footer from "@/shared/components/footer/Footer";
+import Footer from "@/shared/components/footer/Footer";
+
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +22,7 @@ export default function RootLayout({
         <Provider>
           <Header />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </Provider>
         {/* <ToastProvider /> */}
       </body>

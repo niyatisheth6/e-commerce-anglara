@@ -1,5 +1,4 @@
 import Button from "@/shared/components/button/Button";
-import React from "react";
 
 function DiscountCodes() {
   return (

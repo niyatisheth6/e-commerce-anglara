@@ -1,6 +1,6 @@
 import Button from "@/shared/components/button/Button";
 import HeaderTitle from "@/shared/components/header-title/HeaderTitle";
-import React from "react";
+
 import ProductCard from "./ProductCard";
 
 function FeatureProducts() {

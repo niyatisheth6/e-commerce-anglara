@@ -1,32 +1,13 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 import HeaderTitle from "@/shared/components/header-title/HeaderTitle";
-import brand1 from "@/assets/images/brand-1.png";
-import brand2 from "@/assets/images/brand-2.png";
-import brand3 from "@/assets/images/brand-3.png";
-import brand4 from "@/assets/images/brand-4.png";
-import brand5 from "@/assets/images/brand-5.png";
-import brand6 from "@/assets/images/brand-6.png";
-import brand7 from "@/assets/images/brand-7.png";
-import brand8 from "@/assets/images/brand-8.png";
+import { brandsData } from "@/shared/helpers/data/brandsData";
 
 function Brands() {
-  const companies = [
-    brand1,
-    brand2,
-    brand3,
-    brand4,
-    brand5,
-    brand6,
-    brand7,
-    brand8,
-  ];
-
-  const infiniteCompanies = [...companies, ...companies];
+  const infiniteCompanies = [...brandsData, ...brandsData];
 
   return (
     <div className="py-20">
@@ -42,7 +23,7 @@ function Brands() {
                 width={168}
                 height={118}
                 className="w-[10.5rem] h-[7.375rem] object-contain"
-                alt={`company-${(index % companies.length) + 1}`}
+                alt={`company-${(index % brandsData.length) + 1}`}
               />
             </div>
           ))}

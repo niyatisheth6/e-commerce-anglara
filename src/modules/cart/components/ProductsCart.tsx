@@ -1,8 +1,10 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
-import { Minus, Plus, Trash2 } from "lucide-react";
 import { useState } from "react";
+import Image, { StaticImageData } from "next/image";
+
+import { Minus, Plus, Trash2 } from "lucide-react";
+
 import cartImg from "@/assets/images/cart-img-1.png";
 
 type Product = {

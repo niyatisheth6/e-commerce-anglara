@@ -1,13 +1,16 @@
 "use client";
-import React, { useState } from "react";
-import Logo from "@/assets/icons/Logo.svg";
-import { CircleUser, Menu, Search, ShoppingCart, X } from "lucide-react";
-import clsx from "clsx";
-import { useWindowSize } from "usehooks-ts";
-import style from "@/assets/css/header.module.css";
+import { useState } from "react";
 import Link from "next/link";
+
+import clsx from "clsx";
 import { motion } from "framer-motion";
+import { useWindowSize } from "usehooks-ts";
+import { CircleUser, Menu, Search, ShoppingCart, X } from "lucide-react";
+
 import { headerItems } from "@/shared/helpers/data/headerData";
+
+import Logo from "@/assets/icons/Logo.svg";
+import style from "@/assets/css/header.module.css";
 
 function Header() {
   const [open, setOpen] = useState<boolean>(false);
