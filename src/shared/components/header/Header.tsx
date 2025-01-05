@@ -5,7 +5,14 @@ import Link from "next/link";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { useWindowSize } from "usehooks-ts";
-import { CircleUser, Menu, Search, ShoppingCart, X } from "lucide-react";
+import {
+  ChevronDown,
+  CircleUser,
+  Menu,
+  Search,
+  ShoppingCart,
+  X,
+} from "lucide-react";
 
 import { headerItems } from "@/shared/helpers/data/headerData";
 
@@ -35,8 +42,9 @@ function Header() {
               {headerItems.map((item, index) => {
                 return (
                   <li key={index}>
-                    <Link href="">
+                    <Link href="/">
                       <span>{item.title}</span>
+                      {index === 1 ? <ChevronDown size={20} /> : null}
                     </Link>
                   </li>
                 );

@@ -1,9 +1,10 @@
 "use client";
 
+import { useQuery } from "@tanstack/react-query";
+
 import Button from "@/shared/components/button/Button";
 import HeaderTitle from "@/shared/components/header-title/HeaderTitle";
 import ProductCard from "./ProductCard";
-import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "../api";
 import { GetProductsResponse } from "../types";
 

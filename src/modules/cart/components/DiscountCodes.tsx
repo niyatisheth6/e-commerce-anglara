@@ -11,7 +11,7 @@ function DiscountCodes() {
           <p className="text-base leading-1.5 text-frost-grey mb-10">
             Enter your coupon code if you have one
           </p>
-          <div className="border border-muted-foreground rounded-xl w-fit overflow-hidden bg-white mb-10">
+          <div className="border border-muted-foreground rounded-xl w-fit overflow-hidden bg-white mb-10 flex">
             <input className="bg-white px-2 py-3 font-medium text-base leading-1.5 rounded-l-xl" />
             <button className="bg-primary text-white font-medium text-base leading-1.5 py-3 pr-[1.3125rem] pl-[1.9375rem] rounded-r-xl hover:opacity-90">
               Apply Coupon

@@ -6,10 +6,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
   variant?:
     | "primary"
-    | "plain"
     | "secondary"
-    | "danger"
-    | "contained"
     | "outlined";
 };
 

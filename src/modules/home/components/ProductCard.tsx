@@ -1,11 +1,13 @@
 // "use client"
+import { useRouter } from "next/navigation";
+
 import Image from "next/image";
 import { Heart } from "lucide-react";
 
 import Button from "@/shared/components/button/Button";
-
 import productImg from "@/assets/images/product-1.png";
 import StarSelected from "@/assets/icons/star-selected.svg";
+
 import { GetProductsResponse } from "../types";
 
 type ProductCardProps = {
@@ -13,7 +15,8 @@ type ProductCardProps = {
 }
 
 function ProductCard({product}:ProductCardProps) {
-  console.log(product)
+  const router = useRouter()
+
   return (
     <div className="shadow-lg border border-accent-background rounded">
       <div className="relative">
@@ -51,7 +54,7 @@ function ProductCard({product}:ProductCardProps) {
           </span>
         </div>
       </div>
-        <Button variant="primary" className="w-full">
+        <Button variant="primary" className="w-full" onClick={()=>router.push("/cart")}>
           Add To Cart
         </Button>
       </div>
