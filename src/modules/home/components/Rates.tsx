@@ -2,7 +2,7 @@ import { ratesData } from "@/shared/helpers/data/ratesData";
 
 function Rates() {
   return (
-    <div className="container pt-[3.75rem] pb-[4.6875rem] grid md:grid-cols-3 grid-cols-1 gap-5">
+    <div className="container lg:pt-[3.75rem] lg:pb-[4.6875rem] py-5 grid md:grid-cols-3 grid-cols-1 gap-5">
       {ratesData.map((rate, index) => (
         <div
           key={index}

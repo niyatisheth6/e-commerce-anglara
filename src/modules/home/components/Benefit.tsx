@@ -6,7 +6,7 @@ import { featureData } from "@/shared/helpers/data/featureData";
 
 function Benefit() {
   return (
-    <div className="container py-[3.75rem]">
+    <div className="container lg:py-[3.75rem] py-10">
       <div className="grid grid-cols-1 maxLg:gap-6 sm:grid-cols-2  xl:grid-cols-4">
         {featureData.map((feature, index) => (
           <div

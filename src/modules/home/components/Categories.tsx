@@ -3,7 +3,7 @@ import { categoriesData } from "@/shared/helpers/data/categoriesData";
 
 function Categories() {
   return (
-    <div className="container py-20">
+    <div className="container lg:py-20 py-10">
       <HeaderTitle title="Categories" />
       <div className="mt-[3.75rem] grid lg:grid-cols-8 sm:grid-cols-4  grid-cols-2  gap-5 ">
         {categoriesData.map((category, index) => (

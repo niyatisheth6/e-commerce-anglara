@@ -19,7 +19,7 @@ function FAQ() {
 
   return (
     <div className="bg-muted">
-      <div className="container py-20">
+      <div className="container lg:py-20 py-10">
         <HeaderTitle title="FAQ" />
         <div className="mt-10">
           <div className="w-full">

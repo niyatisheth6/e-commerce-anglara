@@ -9,7 +9,7 @@ import HeroImg from "@/assets/images/shoes.png";
 function Hero() {
   return (
     <>
-      <div className="min-h-[calc(100vh-5rem)] bg-white relative">
+      <div className="lg:min-h-[calc(100vh-5rem)] bg-white relative">
         <div className="container">
           <div className="grid lg:grid-cols-2 lg:gap-12 grid-10 items-center">
             <div className="flex flex-col lg:gap-10 gap-7 lg:py-[10.375rem] py-10 pb-0 lg:max-w-[32.8125rem]">
@@ -33,9 +33,9 @@ function Hero() {
                 <Image
                   src={HeroImg}
                   alt="Green athletic shoe on dark background"
-                  fill
+                  // fill
                   className="object-cover max-h-[31.25rem]"
-                  priority
+                  // priority
                 />
                 <div className="absolute bottom-8 right-4 flex gap-2">
                   <button className="w-[2.375rem] h-[2.375rem] rounded-full bg-white flex justify-center items-center text-foreground">

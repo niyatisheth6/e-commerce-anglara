@@ -8,7 +8,7 @@ import style from "@/assets/css/offer.module.css";
 function Offer() {
   return (
     <div className="bg-accent-foreground">
-      <div className="container py-20">
+      <div className="container lg:py-20 py-10">
         <div className={style.offerData}>
           <div className="flex flex-col gap-10 py-[4.875rem] xl:pr-0 xl:pl-20  xl:max-w-[32.8125rem] p-7">
             <h2 className="text-white font-bold text-[4rem] leading-[4.8406rem]">

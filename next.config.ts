@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const fileLoaderRule = config.module.rules.find((rule: any) =>
       rule.test?.test?.('.svg'),
-    )
+    );
 
     config.module.rules.push(
       {
@@ -19,12 +19,15 @@ const nextConfig: NextConfig = {
         resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
         use: ['@svgr/webpack'],
       },
-    )
+    );
 
     fileLoaderRule.exclude = /\.svg$/i;
 
     return config;
-  }
+  },
+  images: {
+    domains: ['fakestoreapi.com'],  
+  },
 };
 
 export default nextConfig;

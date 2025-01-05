@@ -76,3 +76,17 @@ body {
 .table thead tr th {
   @apply py-[1.5313rem] px-3 font-semibold text-lg leading-3.5 text-left;
 }
+
+.title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.description{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

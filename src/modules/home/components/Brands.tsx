@@ -10,7 +10,7 @@ function Brands() {
   const infiniteCompanies = [...brandsData, ...brandsData];
 
   return (
-    <div className="py-20">
+    <div className="lg:py-20 py-10">
       <div className="container">
         <HeaderTitle title="Popular Brands" />
       </div>
