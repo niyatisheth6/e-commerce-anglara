@@ -3,6 +3,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { reviewData } from "@/shared/helpers/data/reviewData";
 import HeaderTitle from "@/shared/components/header-title/HeaderTitle";
 
 import ReviewCard from "./ReviewCard";
@@ -14,12 +15,9 @@ function CustomersReview() {
       <HeaderTitle title="Customers Review" />
       <div className="mt-10">
         <ReviewCardWrapper>
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
+          {reviewData.map((review) => (
+            <ReviewCard key={review.name} review={review} />
+          ))}
         </ReviewCardWrapper>
       </div>
     </div>
