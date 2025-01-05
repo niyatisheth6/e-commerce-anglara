@@ -61,18 +61,18 @@ body {
 
 /* button  */
 .btn-primary {
-  @apply text-white hover:text-primary bg-primary px-[4.375rem] py-3.5 text-[0.9375rem] leading-[1.1344rem] tracking-[0.5%] font-semibold rounded-lg border border-transparent hover:border-primary hover:bg-white;
+  @apply text-white hover:text-primary bg-primary px-[4.375rem] py-3.5 text-maxSm leading-2.6 tracking-tighter font-semibold rounded-lg border border-transparent hover:border-primary hover:bg-white;
 }
 .btn-secondary {
-  @apply text-primary hover:text-primary bg-white px-[4.375rem] py-3.5 text-[0.9375rem] leading-[1.1344rem] tracking-[0.5%] font-semibold rounded-lg border border-transparent hover:border-primary hover:bg-white;
+  @apply text-primary hover:text-primary bg-white px-[4.375rem] py-3.5 text-maxSm leading-2.6 tracking-tighter font-semibold rounded-lg border border-transparent hover:border-primary hover:bg-white;
 }
 .btn-outlined{
-  @apply text-primary hover:text-white hover:bg-primary bg-white px-[4.375rem] py-3.5 text-[0.9375rem] leading-[1.1344rem] tracking-[0.5%] font-semibold rounded-lg border hover:border-transparent border-primary; 
+  @apply text-primary hover:text-white hover:bg-primary bg-white px-[4.375rem] py-3.5 text-maxSm leading-2.6 tracking-tighter font-semibold rounded-lg border hover:border-transparent border-primary; 
 }
 .table thead {
   @apply bg-accent-foreground;
 }
 
 .table thead tr th {
-  @apply py-[1.5313rem] px-3 font-semibold text-lg leading-[1.3613rem] text-left;
+  @apply py-[1.5313rem] px-3 font-semibold text-lg leading-3.5 text-left;
 }

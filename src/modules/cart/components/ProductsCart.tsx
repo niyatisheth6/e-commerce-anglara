@@ -84,20 +84,20 @@ function ProductsCart() {
                       className="rounded-xl object-cover"
                     />
                     <div className="flex flex-col gap-2.5">
-                      <h3 className="font-medium text-lg leading-[1.3613rem] text-foreground">
+                      <h3 className="font-medium text-lg leading-3.5 text-foreground">
                         {product.name}
                       </h3>
-                      <p className="text-sm leading-[1.0588rem] text-secondary">
+                      <p className="text-sm leading-2.5 text-secondary">
                         Color : {product.color}
                       </p>
-                      <p className="text-sm leading-[1.0588rem] text-secondary">
+                      <p className="text-sm leading-2.5 text-secondary">
                         Size : {product.size}
                       </p>
                     </div>
                   </div>
                 </td>
                 <td className="py-4 px-3">
-                  <span className="text-lg leading-[1.3613rem] text-secondary">
+                  <span className="text-lg leading-3.5 text-secondary">
                     Rs.{product.price}
                   </span>
                 </td>
@@ -113,12 +113,12 @@ function ProductsCart() {
                   </div>
                 </td>
                 <td className="py-4 px-3">
-                  <span className="text-lg leading-[1.3613rem] text-secondary">
+                  <span className="text-lg leading-3.5 text-secondary">
                     FREE
                   </span>
                 </td>
                 <td className="py-4 px-3">
-                  <span className="text-lg leading-[1.3613rem] text-secondary">
+                  <span className="text-lg leading-3.5 text-secondary">
                     Rs.{product.price * product.quantity}
                   </span>
                 </td>

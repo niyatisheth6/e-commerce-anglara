@@ -16,7 +16,7 @@ function Hero() {
               <h1 className="font-bold text-[4rem] maxMd:text-[2.5rem] maxXs:leading-[2.8406rem] text-foreground leading-[4.8406rem]">
                 Lorem ipsum dolor sit.
               </h1>
-              <p className="text-secondary text-base leading-[1.21rem]">
+              <p className="text-secondary text-base leading-1.5">
                 Lorem ipsum dolor sit amet consectetur. Varius eu sed adipiscing
                 pellentesque feugiat gravida tincidunt lobortis mi. Nisl
                 sollicitudin in dictumst elementum amet nulla. Malesuada tempor

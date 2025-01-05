@@ -14,7 +14,7 @@ function Offer() {
             <h2 className="text-white font-bold text-[4rem] leading-[4.8406rem]">
               Lorem ipsum dolor sit.
             </h2>
-            <p className="text-white text-base leading-[1.21rem] -tracking-[3%]">
+            <p className="text-white text-base leading-1.5 -tracking-md">
               Lorem ipsum dolor sit amet consectetur. Varius eu sed adipiscing
               pellentesque feugiat gravida tincidunt lobortis mi. Nisl
               sollicitudin in dictumst elementum amet nulla. Malesuada tempor

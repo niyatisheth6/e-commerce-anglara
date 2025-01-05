@@ -23,7 +23,7 @@ function ProductCard() {
         </div>
       </div>
       <div className="bg-white p-5 border border-accent-background rounded-b-xl">
-        <h3 className="text-foreground font-bold text-lg leading-[1.3613rem] mb-[0.3125rem]">
+        <h3 className="text-foreground font-bold text-lg leading-3.5 mb-[0.3125rem]">
           Product Title
         </h3>
         <p className="text-secondary text-sm mb-4">
@@ -31,7 +31,7 @@ function ProductCard() {
           malesuada.
         </p>
         <div className="flex gap-2 mb-4 ">
-          <span className="text-foreground text-sm font-semibold leading-[1.0588rem]">
+          <span className="text-foreground text-sm font-semibold leading-2.5">
             Rs.825
           </span>
           <span className="text-secondary text-xs leading-[0.9075rem]">

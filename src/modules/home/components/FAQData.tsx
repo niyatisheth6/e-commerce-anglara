@@ -22,7 +22,7 @@ function FAQData({ index, item, isOpen, onToggle }: FAQDataProps) {
         aria-expanded={isOpen}
         aria-controls={`faq-item-${item.id}`}
       >
-        <h3 className="font-medium text-xl leading-[1.5125rem] tracking-[0.5%] text-foreground">
+        <h3 className="font-medium text-xl leading-2.7 tracking-tighter text-foreground">
           <span className=" mr-1">{item.id}.</span>
           <span>{item.question}</span>
         </h3>
@@ -45,7 +45,7 @@ function FAQData({ index, item, isOpen, onToggle }: FAQDataProps) {
           }
         )}
       >
-        <p className="text-base leading-[1.21rem] text-secondary tracking-[0.5%]">
+        <p className="text-base leading-1.5 text-secondary tracking-tighter">
           {item.answer}
         </p>
       </div>

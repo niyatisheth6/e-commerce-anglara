@@ -16,10 +16,10 @@ function ReviewCard() {
           <Star />
         </div>
       </div>
-      <h3 className="text-foreground font-semibold text-xl leading-[1.5125rem] tracking-[2%]">
+      <h3 className="text-foreground font-semibold text-xl leading-2.7 tracking-sm">
         Floyd Miles
       </h3>
-      <p className="text-secondary text-sm leading-[1.0588rem] tracking-[2%]">
+      <p className="text-secondary text-sm leading-2.5 tracking-sm">
         ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
         enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
       </p>

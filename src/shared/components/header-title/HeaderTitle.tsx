@@ -3,7 +3,7 @@ type HeaderTitleProps = {
 };
 function HeaderTitle({ title }: HeaderTitleProps) {
   return (
-    <h1 className="font-semibold text-[2.5rem] leading-[3.0256rem] -tracking-[3%] text-foreground">
+    <h1 className="font-semibold text-[2.5rem] leading-[3.0256rem] -tracking-md text-foreground">
       {title}
     </h1>
   );
