@@ -5,7 +5,7 @@
   @apply flex justify-between items-center py-5 relative;
 }
 .sidebar > ul {
-  @apply flex gap-10 maxLg:gap-5 maxLg:flex-col maxLg:items-center  relative;
+  @apply flex gap-10 maxLg:gap-5 maxLg:flex-col items-center  relative;
 }
 .sidebar > ul > li > a {
   transition: all 0.3s ease-in;
@@ -25,8 +25,4 @@
     @apply fixed p-4 w-full left-0 bg-white overflow-y-auto hidden top-[4.5rem] h-[calc(100%-4.5rem)];
   }
 }
-@screen minMaxMd {
-  .sidebar {
-    max-width: 26.25rem;
-  }
-}
+

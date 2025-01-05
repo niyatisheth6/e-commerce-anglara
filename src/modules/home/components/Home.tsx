@@ -9,10 +9,12 @@ import PopularProducts from "./PopularProducts";
 import Brands from "./Brands";
 import FAQ from "./FAQ";
 import CustomersReview from "./CustomersReview";
+import Hero from "./Hero";
 
 function Home() {
   return (
     <div>
+      <Hero/>
       <Rates />
       <Categories />
       <FeatureProducts />
