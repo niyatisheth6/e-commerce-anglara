@@ -1,11 +1,13 @@
-"use client"
+"use client";
+import { useQuery } from "@tanstack/react-query";
+
 import Button from "@/shared/components/button/Button";
 import HeaderTitle from "@/shared/components/header-title/HeaderTitle";
+import Loader from "@/shared/components/loader/Loader";
 
-import ProductCard from "./ProductCard";
-import { useQuery } from "@tanstack/react-query";
 import { getFeatureProducts } from "../api";
 import { GetProductsResponse } from "../types";
+import ProductCard from "./ProductCard";
 
 function FeatureProducts() {
   const { data, isLoading } = useQuery({
@@ -13,9 +15,6 @@ function FeatureProducts() {
     queryFn: getFeatureProducts,
   });
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <div className="bg-muted">
@@ -24,11 +23,16 @@ function FeatureProducts() {
           <HeaderTitle title="Feature Products" />
           <Button variant="primary">View All</Button>
         </div>
-        <div className="mt-10 grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
-        {data.slice(1).map((product: GetProductsResponse) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <div className="mt-10 grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+            {data?.slice(1).map((product: GetProductsResponse) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

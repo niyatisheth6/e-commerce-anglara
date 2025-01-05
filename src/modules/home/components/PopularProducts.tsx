@@ -4,19 +4,17 @@ import { useQuery } from "@tanstack/react-query";
 
 import Button from "@/shared/components/button/Button";
 import HeaderTitle from "@/shared/components/header-title/HeaderTitle";
-import ProductCard from "./ProductCard";
+import Loader from "@/shared/components/loader/Loader";
+
 import { getProducts } from "../api";
 import { GetProductsResponse } from "../types";
+import ProductCard from "./ProductCard";
 
 function PopularProducts() {
   const { data, isLoading } = useQuery({
     queryKey: ["products"],
     queryFn: getProducts,
   });
-
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <div className="bg-muted">
@@ -25,12 +23,15 @@ function PopularProducts() {
           <HeaderTitle title="Most Popular Products" />
           <Button variant="primary">View All</Button>
         </div>
-
-        <div className="mt-10 grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
-          {data?.slice(5, 13).map((product: GetProductsResponse) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <div className="mt-10 grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+            {data?.slice(5, 13).map((product: GetProductsResponse) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

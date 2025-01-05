@@ -62,6 +62,9 @@ const config: Config = {
         maxXl: "1.375rem",
         maxSm: "0.9375rem",
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
     },
     fontFamily: {
       Inter: "Inter",
