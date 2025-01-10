@@ -18,3 +18,10 @@ export type GetProductsResponse = {
   image: string;
   rating: Rating;
 };
+
+export type review = {
+  name: string;
+  avatar: string;
+  rating: number;
+  text: string;
+}

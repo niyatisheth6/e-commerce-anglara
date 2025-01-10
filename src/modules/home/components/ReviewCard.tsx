@@ -2,7 +2,13 @@ import Image from "next/image";
 
 import { Star } from "lucide-react";
 
-function ReviewCard({ review }: any) {
+import { review } from "../types";
+
+type ReviewCardProps = {
+  review: review;
+};
+
+function ReviewCard({ review }: ReviewCardProps) {
   return (
     <div className="border-[0.1125rem] border-accent-background p-[1.4494rem] rounded-[0.625rem] flex flex-col gap-5">
       <div className="flex max-w-[25rem] w-full justify-between">
